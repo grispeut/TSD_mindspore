@@ -28,12 +28,13 @@ python pascal2coco.py
 ```
 
 ## 预训练模型下载
-[coco预训练模型](https://mindspore.cn/resources/hub/details?MindSpore/ascend/1.1/yolov4_v1.1)
+[coco预训练模型](https://mindspore.cn/resources/hub/details?MindSpore/ascend/1.1/yolov4_v1.1)下载完后放在weights文件夹下面
 
 ## 模型训练
 ```
 sh train.sh
 ```
+生成的模型在weights文件夹下
 
 ## 推理
 测试图片放在samples文件夹下，推理结果在outputs文件夹下，该脚本可以本地运行，也可以直接用于部署Modelarts在线服务和批量服务
