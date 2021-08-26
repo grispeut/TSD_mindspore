@@ -66,8 +66,10 @@ def ImageCorrupt(img):
         ser3 = random.randint(1, 2)
         if not idx1 in [-1]:
             img = corrupt(img, corruption_number=idx1, severity=ser1)
-        img = corrupt(img, corruption_number=idx2, severity=ser2)
-        img = corrupt(img, corruption_number=idx3, severity=ser3)
+        if random.randint(1, 2)<2:
+            img = corrupt(img, corruption_number=idx2, severity=ser2)
+        if random.randint(1, 2)<2:
+            img = corrupt(img, corruption_number=idx3, severity=ser3)
     else:
         idx1 = random.randint(-1, 18)
         ser1 = random.randint(2, 4)
