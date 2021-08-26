@@ -1,5 +1,5 @@
 # 赛题介绍
-第三届华为云无人车挑战杯复赛Top1方案分享。本届[无人车挑战杯](https://competition.huaweicloud.com/information/1000041539/introduction)大赛主要考核点有交通信号灯识别、车道线检测、斑马线检测、限速标志识别、施工标志识别、障碍物检测等，其中交通信号灯、斑马线、限速标志检测算法需要基于AI开发平台ModelArts开发。训练数据集包含红灯、绿灯、黄灯、人行横道、限速标志、解除限速标志六种类型图片，需使用ModelArts数据管理模块完成以上六种检测目标的标注。参赛者需基于MindSpore框架（使用其他框架提交的作品无效）建立目标检测模型
+第三届华为云无人车挑战杯复赛**Top1**方案分享。本届[无人车挑战杯](https://competition.huaweicloud.com/information/1000041539/introduction)大赛主要考核点有交通信号灯识别、车道线检测、斑马线检测、限速标志识别、施工标志识别、障碍物检测等，其中交通信号灯、斑马线、限速标志检测算法需要基于AI开发平台ModelArts开发。训练数据集包含红灯、绿灯、黄灯、人行横道、限速标志、解除限速标志六种类型图片，需使用ModelArts数据管理模块完成以上六种检测目标的标注。参赛者需基于**MindSpore**框架（使用其他框架提交的作品无效）建立目标检测模型
 
 ## 解决方案及算法介绍
 + 数据集: [初赛数据](https://marketplace.huaweicloud.com/markets/aihub/datasets/detail/?content_id=93d35831-c084-4003-b175-4280ef289379)和[复赛数据](https://marketplace.huaweicloud.com/markets/aihub/notebook/detail/?id=0fbf9486-9e71-41f0-9295-3d75b68b15db)
