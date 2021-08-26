@@ -7,6 +7,8 @@
 + 后处理： tta+wbf, 使用[wbf](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)进行多尺度集成，wbf应该是目前性能最好后处理方法，优于nms, soft-nms, nmw
 + 检测模型：[YoloV4](https://gitee.com/ascend/modelzoo/tree/master/built-in/MindSpore/Official/cv/detection/YOLOv4_Cspdarknet53_for_MindSpore), 在本次比赛中我们集成了两个yolov4模型，模型一使用albu增广，模型二使用albu+imagecorruptions增广，可以提升方案的鲁棒性。和只使用模型一相比，堆叠模型二后可以带来2个点左右的涨点
 
+**感谢以上作者的开源工作！！！**
+
 ## 环境配置
 ### 环境依赖
 + cuda 10.1
