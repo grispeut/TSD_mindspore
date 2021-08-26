@@ -58,21 +58,19 @@ def ImageCorrupt(img):
     if flag < 4:
         transformed = transform(image=img)
         img = transformed["image"]
-        idx1 = random.randint(-1, 4)
-        idx2 = random.randint(7, 13)
-        idx4 = random.randint(15, 18)
+        idx1 = random.randint(-1, 6)
+        idx2 = random.randint(7, 14)
+        idx3 = random.randint(15, 18)
         ser1 = random.randint(1, 2)
-        ser2 = random.randint(1, 1)
-        ser3 = random.randint(1, 3)
+        ser2 = random.randint(1, 2)
+        ser3 = random.randint(1, 2)
         if not idx1 in [-1]:
             img = corrupt(img, corruption_number=idx1, severity=ser1)
-        if not idx2 in [-1]:
-            img = corrupt(img, corruption_number=idx2, severity=ser2)
-        img = corrupt(img, corruption_number=14, severity=ser3)
-        img = corrupt(img, corruption_number=idx4, severity=1)
+        img = corrupt(img, corruption_number=idx2, severity=ser2)
+        img = corrupt(img, corruption_number=idx3, severity=ser3)
     else:
         idx1 = random.randint(-1, 18)
-        ser1 = 4
+        ser1 = random.randint(2, 4)
         if not idx1 in [-1]:
             img = corrupt(img, corruption_number=idx1, severity=ser1)
 
